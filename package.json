@@ -7,12 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "typescript": "^3.7.2"
+  "author": "s2terminal",
+  "repository": {
+    "url": "git@github.com:s2terminal/dnscript.git"
   },
+  "license": "MIT",
+  "dependencies": {},
   "devDependencies": {
-    "@types/node": "^12.12.7"
+    "@types/node": "^12.12.7",
+    "typescript": "^3.7.2"
   }
 }
