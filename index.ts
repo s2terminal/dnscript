@@ -1,7 +1,12 @@
-import { resolve } from './lib';
+import { resolve, DNSRequest, dnsDescribeDig } from './lib';
+
+const dig = async (request: DNSRequest): Promise<void> => {
+  console.log(dnsDescribeDig(request));
+  console.log(await resolve(request));
+}
 
 // main
 (async () => {
-  const record = await resolve({ hostname: 's2terminal.com' });
-  console.log(record);
+  await dig({ hostname: 'example.com' });
+  // await dig({ hostname: 'cname.example.com', rrtype: 'CNAME', nameserver: '1.1.1.1' });
 })();
